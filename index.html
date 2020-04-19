@@ -1,1 +1,212 @@
-Alma
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Top Secret</title>
+  <link rel="stylesheet" type="text/css" href="/css/master.css">
+</head>
+
+<body class="">
+
+  <h1> CYBER PLATFORM </h1>
+
+  <div class="guess">
+    <section id="selection">
+      <h3>Gyanusított</h3>
+      <div class="victims flexbox">
+        <div>
+          <label for="victim1"><img src="/pictures/hook.jpg">
+            <p>Hook kapitány</p>
+          </label>
+          <input type="radio" name="victim" value="hook" id="victim1">
+        </div>
+
+        <div>
+          <label for="victim2"><img src="/pictures/szornyella.jpg">
+            <p>Szörnyella</p>
+          </label>
+          <input type="radio" name="victim" value="szornyella" id="victim2">
+        </div>
+
+        <div>
+          <label for="victim3"><img src="/pictures/gru.jpg">
+            <p>Gru</p>
+          </label>
+          <input type="radio" name="victim" value="gru" id="victim3">
+        </div>
+
+        <div>
+          <label for="victim4"><img src="/pictures/lord.jpg">
+            <p>Lord Biznisz</p>
+          </label>
+          <input type="radio" name="victim" value="lordBusiness" id="victim4">
+        </div>
+
+        <div>
+          <label for="victim5"><img src="/pictures/hokuszpok.jpg">
+            <p>Hókuszpók</p>
+          </label>
+          <input type="radio" name="victim" value="hokuszpok" id="victim5">
+        </div>
+
+        <div>
+          <label for="victim6"><img src="/pictures/ursula.jpg">
+            <p>Ursula</p>
+          </label>
+          <input type="radio" name="victim" value="ursula" id="victim6">
+        </div>
+
+        <div>
+          <label for="victim7"><img src="/pictures/joker.jpg">
+            <p>Joker</p>
+          </label>
+          <input type="radio" name="victim" value="joker" id="victim7">
+        </div>
+      </div>
+
+    </section>
+
+    <section id="selection">
+      <h3>Helyszín</h3>
+      <div class="place flexbox">
+        <div>
+          <label for="place1"><img src="/pictures/aqua.jpg">
+            <p>Aqua park</p>
+          </label>
+          <input type="radio" name="place" value="" id="place1">
+        </div>
+
+        <div>
+          <label for="place2"><img src="/pictures/kikoto.jpg">
+            <p>Kikötő</p>
+          </label>
+          <input type="radio" name="place" value="" id="place2">
+        </div>
+
+        <div>
+          <label for="place3"><img src="/pictures/varos.jpg">
+            <p>Városháza</p>
+          </label>
+          <input type="radio" name="place" value="" id="place3">
+        </div>
+
+        <div>
+          <label for="place4"><img src="/pictures/dom.jpg">
+            <p>Dóm</p>
+          </label>
+          <input type="radio" name="place" value="" id="place4">
+        </div>
+
+        <div>
+          <label for="place5"><img src="/pictures/bosz.jpg">
+            <p>Boszorkánysziget</p>
+          </label>
+          <input type="radio" name="place" value="" id="place5">
+        </div>
+
+        <div>
+          <label for="place6"><img src="/pictures/belv.jpg">
+            <p>Belvárosi híd</p>
+          </label>
+          <input type="radio" name="place" value="" id="place6">
+        </div>
+
+        <div>
+          <label for="place7"><img src="/pictures/tower.jpg">
+            <p>Víztorony</p>
+          </label>
+          <input type="radio" name="place" value="" id="place7">
+        </div>
+      </div>
+    </section>
+
+    <section id="selection">
+      <h3>Eszköz</h3>
+      <div class="tool flexbox">
+        <div>
+          <label for="tool1"><img src="/pictures/ora.jpg">
+            <p>Okosóra</p>
+          </label>
+          <input type="radio" name="tools" value="" id="tool1">
+        </div>
+
+        <div>
+          <label for="tool2"><img src="/pictures/bomba.jpg">
+            <p>Bomba</p>
+          </label>
+          <input type="radio" name="tools" value="" id="tool2">
+        </div>
+
+        <div>
+          <label for="tool3"><img src="/pictures/szigony.jpg">
+            <p>Szigony</p>
+          </label>
+          <input type="radio" name="tools" value="" id="tool3">
+        </div>
+
+        <div>
+          <label for="tool4"><img src="/pictures/robot.jpg">
+            <p>Oirásrobot</p>
+          </label>
+          <input type="radio" name="tools" value="" id="tool4">
+        </div>
+
+        <div>
+          <label for="tool5"><img src="/pictures/ultra.jpg">
+            <p>Ultrahang</p>
+          </label>
+          <input type="radio" name="tools" value="" id="tool5">
+        </div>
+
+        <div>
+          <label for="tool6"><img src="/pictures/laser.jpg">
+            <p>Lézerfegyver</p>
+          </label>
+          <input type="radio" name="tools" value="" id="tool6">
+        </div>
+
+        <div>
+          <label for="tool7"><img src="/pictures/katana.png">
+            <p>Katana</p>
+          </label>
+          <input type="radio" name="tools" value="" id="tool7">
+        </div>
+      </div>
+    </section>
+
+    <section id="counter">
+      <div>
+        <p> Még <span id="possibilities"></span> lehetőséged van!</p>
+      </div>
+
+      <button onclick="send()">Lenyomoz</button>
+    </section>
+
+  </div>
+
+  <div class="dedetonate">
+    <div id="tnt" class="tnt3">
+      <img class="count3" src="/pictures/tnt3.png">
+      <img class="count2" src="/pictures/tnt2.png">
+      <img class="count1" src="/pictures/tnt1.png">
+    </div>
+    <p>Írd be a kódot:</p>
+    <input id="year" type="number" name="" value="" maxlength="4" placeholder="xxxx">
+    <input id="month" type="number" name="" value="" maxlength="2" placeholder="xx">
+    <input id="day" type="number" name="" value="" maxlength="2" placeholder="xx">
+    <button onClick="dedetonate()">Hatástalanít</button>
+  </div>
+
+  <div class="win">
+    <img src="pictures/win.png">
+  </div>
+
+  <div class="lost">
+    <img src="pictures/lost.jpg">
+  </div>
+
+  <script src="/js/master.js"></script>
+</body>
+
+</html>

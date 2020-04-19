@@ -1,0 +1,184 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("/pictures/matrix.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: monospace;
+  text-align: center;
+}
+
+h1 {
+  background: black;
+  color: #26f852;
+  font-size: 5em;
+  animation: blink-animation 1s steps(20, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    color: black;
+  }
+}
+
+/* THE GUESS PART */
+body.second .guess,
+body.third .guess,
+body.fourth .guess {
+  display: none;
+}
+
+section {
+  margin: 5vw;
+}
+
+h3 {
+  font-size: 40px;
+  color: white;
+  text-shadow: -4px 3px 5px #b5b5b5a8;
+  margin-bottom: 15px;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: hsla(0, 100%, 100%, 0.5);
+  border-radius: 15px;
+}
+
+.flexbox div{
+  margin: 10px 50px;
+  text-align: center;
+}
+
+.flexbox label {
+  font-size: 1.6em;
+  text-shadow: 0 0px 2px white;
+  font-weight: bold;
+}
+
+.flexbox div label img{
+  max-height: 100px;
+  border-radius: 15px;
+}
+
+.flexbox div input {
+  display: inline-block;
+}
+
+/* Visszaszámláló */
+
+button {
+  font-family: inherit;
+  width: 120px;
+  height: 60px;
+  background: black;
+  color: red;
+  margin: 20px;
+}
+
+#counter p{
+  color: white;
+  font-size: 2em;
+}
+
+/* Dedetonata */
+
+body .dedetonate,
+body.third .dedetonate,
+body.fourth .dedetonate {
+  display: none;
+}
+
+body.second .dedetonate{
+  display: block;
+}
+
+.dedetonate {
+  position: absolute;
+  left: 50%;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  background-color: hsla(0, 100%, 100%, 0.5);
+  padding: 10px;
+  padding-left: 15vw;
+  padding-right: 15vw;
+}
+
+.dedetonate p {
+      text-shadow: 0 0 7px black;
+      color: #ff3939;
+      font-size: 30px;
+      margin-bottom: 10px;
+}
+
+.dedetonate img {
+  max-height: 200px;
+  /* position: relative; */
+}
+
+.dedetonate input {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
+
+.dedetonate button {
+  display: block;
+  margin: 15px auto;
+}
+
+div.tnt3 .count2,
+div.tnt3 .count1{
+  display: none;
+}
+
+div.tnt2 .count3,
+div.tnt2 .count1{
+  display: none;
+}
+
+div.tnt1 .count3,
+div.tnt1 .count2{
+  display: none;
+}
+
+/* Win */
+body .win,
+body.second .win,
+body.fourth .win {
+ display: none
+}
+
+body.third .win {
+  display: block;
+}
+
+.win img {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+/* Lost */
+body .lost,
+body.second .lost,
+body.third .lost {
+  display: none
+}
+
+body.fourth .lost {
+  display: block;
+}
+
+.lost img {
+  max-width: 90vw;
+  max-height: 90vh;
+}

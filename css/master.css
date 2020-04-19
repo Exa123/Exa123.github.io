@@ -103,6 +103,7 @@ body.second .dedetonate{
 }
 
 .dedetonate {
+  width: 100%;
   position: absolute;
   left: 50%;
   top: 50vh;
@@ -122,6 +123,7 @@ body.second .dedetonate{
 
 .dedetonate img {
   max-height: 200px;
+  max-width: 100%;
   /* position: relative; */
 }
 
@@ -181,4 +183,10 @@ body.fourth .lost {
 .lost img {
   max-width: 90vw;
   max-height: 90vh;
+}
+
+@media only screen and (max-width: 504px) {
+  h1 {
+    font-size: 3em;
+  }
 }

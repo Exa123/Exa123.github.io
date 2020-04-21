@@ -32,7 +32,7 @@ var dedetonate = function() {
   var day = document.getElementById('day').value;
   count = count-1;
 
-  if (year == 1979 && month == 03 && day == 12) {
+  if (year == 1879 && month == 03 && day == 12) {
     document.body.classList = "third";
   }
   else if (count == 0) {
